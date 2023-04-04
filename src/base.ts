@@ -1,6 +1,8 @@
 /*
 Shared functionalities
 */
+import fetch from 'isomorphic-unfetch';
+
 type Config = {
   apiKey: string;
   baseUrl?: string;
