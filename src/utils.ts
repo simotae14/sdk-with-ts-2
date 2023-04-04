@@ -4,7 +4,7 @@ https://blog.logrocket.com/typescript-mixins-examples-and-use-cases/
 improve multiclass inheritance
 the function is to join two or more class declarations
 */
-function applyMixins(derivedCtor: any, constructors: any[]) {
+export function applyMixins(derivedCtor: any, constructors: any[]) {
   constructors.forEach((baseCtor) => {
     Object.getOwnPropertyNames(baseCtor.prototype).forEach((name) => {
       Object.defineProperty(
